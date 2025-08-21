@@ -4,6 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>NewsAggregationLite</title>
+  <meta name="description" content="Dark dashboard for local weather, US news, Reddit popular, and AI news."/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -26,12 +27,12 @@
   </section>
 
   <section id="localNews" class="card">
-    <div class="card-header"><h2>U.S. News</h2><span id="localQuery" class="dim">United States</span></div>
+    <div class="card-header"><h2>U.S. News</h2><span class="dim">United States</span></div>
     <ul id="localNewsList" class="list"></ul>
   </section>
 
   <section id="reddit" class="card">
-    <div class="card-header"><h2>Reddit — r/popular</h2></div>
+    <div class="card-header"><h2>Reddit — r/popular</h2><a class="dim" href="https://www.reddit.com/r/popular/" target="_blank" rel="noopener">Open</a></div>
     <ul id="redditList" class="list reddit"></ul>
   </section>
 
@@ -42,8 +43,9 @@
 </main>
 
 <footer class="footer dim">
-  <p>Weather by Open-Meteo. RSS via Netlify Function proxy (CORS+UA). Reddit via JSON.</p>
+  <p>Weather by Open-Meteo. RSS via Vercel API route proxy. Reddit via JSON.</p>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
