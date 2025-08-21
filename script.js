@@ -92,3 +92,4 @@ async function loadAINews(){
 els.unitToggle.addEventListener('click',()=>{ STATE.unit=STATE.unit==="F"?"C":"F"; els.unitToggle.textContent=`°${STATE.unit}`; renderWeather(); });
 
 (async()=>{ await loadWeather(); await Promise.all([loadUSNews(),loadReddit(),loadAINews()]); setUpdated(); setInterval(async()=>{ await Promise.all([loadWeather(),loadUSNews(),loadReddit(),loadAINews()]); setUpdated(); }, 30*60*1000); })();
+
